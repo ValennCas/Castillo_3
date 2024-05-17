@@ -1,0 +1,230 @@
+*{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+}
+body{
+    margin: 0%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav img{
+    width: 60px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 3px;
+}
+
+nav{
+    background-color: rgb(207, 16, 46);
+    height: 2em;
+    color: white;
+}
+nav li{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.texto-Contacto{
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 0.5em;
+}
+
+form p{
+    font-style: italic;
+    margin: 5px;
+}
+
+.estiloInput{
+    box-shadow: 0 0 15px red;
+    border: 0.20em solid red;
+}
+
+h1{
+    margin-top: 11%;
+    margin-bottom: 2px;
+}
+
+
+form{
+    background-color: #ebeaea;
+    margin: 2%;
+    padding: 20px 0px 20px 25px;
+    width: 70%;
+}
+
+form label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+input, textarea{
+    padding: 3% 2% 3%;
+    margin-bottom: 20px;
+    border: 0.15em solid #6e6d6d;
+    transition: border 0.30s ease-in-out, box-shadow 0.30s ease-out;
+}
+input:hover, textarea:hover{
+    border-color:rgb(255, 214, 0);
+    box-shadow: 0 0 17px rgb(255, 214, 0);
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+
+textarea{
+    width: 80%;
+    resize: vertical;
+}
+
+#email{
+    width: 60%;
+}
+.aclaracionForm{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+div ul, div p{
+    width: 100%;
+}
+div ul{
+    padding-left: 20px;
+}
+form, input, button, textarea{
+    border-radius: 8px
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color: rgb(207, 16, 46);
+    color: white;
+    padding: 2%;
+    margin: 2% 0% 2% 0%;
+}
+#boton_enviar{
+    transition: padding 3s ease-out;
+}
+
+#boton_borrar{
+    background-color: #bcb8b8;
+    margin-left: 2%;
+}
+#boton_enviar:hover{
+    padding: 3%;
+}
+.envioFormCorrecto{
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 550px) {
+    nav{
+        height: 3em;
+    }
+    nav img{
+        width: 90px;
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+    label, .texto-Contacto{
+        font-size: 150%;
+    }
+    button{
+        font-size: 120%;
+    }
+    h1{
+        font-size: 180%;
+    }
+    .texto-Contacto{
+        padding-right: 1em;
+    }
+    input{
+        width: 50%;
+    }
+    input, textarea{
+        padding: 2% 2% 2%;
+        margin-bottom: 30px;
+        font-size: larger;
+    }
+    form{
+        padding: 30px 0px 30px 25px;
+    }
+    nav{
+        height: 4em;
+    }
+    nav img{
+        width: 120px;
+    }
+    .aclaracionForm{
+        font-size: 135%;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    label, .texto-Contacto{
+        font-size: 187%;
+    }
+    button{
+        font-size: 170%;
+    }
+    h1{
+        font-size: 225%;
+    }
+    .texto-Contacto{
+        padding-right: 2em;
+    }
+    nav{
+        height: 5em;
+    }
+    nav img{
+        width: 152px;
+    }
+}
+@media only screen and (min-width: 820px) {
+}
+@media only screen and (min-width: 1000px) {
+    label, .texto-Contacto{
+        font-size: 190%;
+    }
+    input, textarea{
+        margin-bottom: 35px;
+    }
+    form{
+        padding: 35px 0px 35px 25px;
+    }
+    button{
+        font-size: 170%;
+    }
+    h1{
+        font-size: 240%;
+    }
+    .texto-Contacto{
+        padding-right: 2em;
+    }
+    nav{
+        height: 5.5em;
+    }
+    nav img{
+        width: 168px;
+    }
+    .aclaracionForm{
+        font-size: 165%;
+    }
+}

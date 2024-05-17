@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/icono_perseverancia.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <img src="imgs/logo-LPS.png" alt="Logo de la Perseverancia Seguros">
+                </li>
+                <li class="texto-Contacto">Contacto</li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Formulario de Contacto</h1>
+            <div class="aclaracionForm">
+                <p>Para lograr contactarse con nosotros es necesario que se completen los siguientes campos: </p>
+                <ul>
+                    <li>Teléfono o correo electrónico</li>
+                    <li>Mensaje</li>
+                </ul>
+            </div>
+            <form>
+                <label for="telefono">Teléfono:</label>
+                <p id="campoVacíoTelefono"></p>
+                <input type="tel" name="telefono" id="telefono" placeholder="teléfono">
+                <label for="email">Correo electrónico:</label>
+                <p id="campoVacíoEmail"></p>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto" placeholder="asunto">
+                <label for="mensaje">Mensaje:</label>
+                <p id="campoVacíoMensaje"></p>
+                <textarea name="mensaje" id="mensaje" placeholder="Ingrese un mensaje"></textarea>
+                <div>
+                    <button id="boton_enviar">Enviar</button>
+                    <button id="boton_borrar">Borrar todo</button>
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+<script src="js/main.js"></script>
+</html>
