@@ -45,6 +45,8 @@ nav li{
 form p{
     font-style: italic;
     margin: 5px;
+    margin: 1px 5px 5px 5px;
+    font-size: 70%;
 }
 
 .estiloInput{
@@ -67,7 +69,6 @@ form{
 
 form label{
     display: block;
-    margin-bottom: 4px;
 }
 
 input, textarea{
@@ -103,7 +104,10 @@ div ul{
     padding-left: 20px;
 }
 form, input, button, textarea{
-    border-radius: 8px
+    border-radius: 8px;
+}
+input{
+    width: 50%;
 }
 button a{
     color: white;
@@ -115,7 +119,7 @@ button{
     padding: 2%;
     margin: 2% 0% 2% 0%;
 }
-#boton_enviar{
+#boton_enviar, .botonVolverAlContacto{
     transition: padding 3s ease-out;
 }
 
@@ -123,13 +127,32 @@ button{
     background-color: #bcb8b8;
     margin-left: 2%;
 }
-#boton_enviar:hover{
+#boton_enviar:hover,.botonVolverAlContacto:hover{
     padding: 3%;
+    background-color: rgb(158, 3, 26);
+}
+
+#boton_borrar:hover{
+    background-color: #8a8787;
 }
 .envioFormCorrecto{
     margin-top: 60px;
     font-size: 30px;
     text-align: center;
+}
+
+@media only screen and (max-width: 250px) {
+    nav img{
+        width: 45px;
+        margin-top: 9px;
+    }
+    nav li{
+        font-size: 82%;
+    }
+    h1{
+        margin-top: 15%;
+        margin-left: 2%;
+    }
 }
 
 @media only screen and (min-width: 550px) {
@@ -139,7 +162,10 @@ button{
     nav img{
         width: 90px;
     }
-
+    form p{
+        font-size: 80%;
+        margin: 4px 5px 7px 5px;
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -155,9 +181,7 @@ button{
     .texto-Contacto{
         padding-right: 1em;
     }
-    input{
-        width: 50%;
-    }
+
     input, textarea{
         padding: 2% 2% 2%;
         margin-bottom: 30px;
@@ -179,10 +203,10 @@ button{
 
 @media only screen and (min-width: 820px) {
     label, .texto-Contacto{
-        font-size: 187%;
+        font-size: 165%;
     }
     button{
-        font-size: 170%;
+        font-size: 165%;
     }
     h1{
         font-size: 225%;
@@ -196,9 +220,11 @@ button{
     nav img{
         width: 152px;
     }
+    form p{
+        font-size: 90%;
+    }
 }
-@media only screen and (min-width: 820px) {
-}
+
 @media only screen and (min-width: 1000px) {
     label, .texto-Contacto{
         font-size: 190%;
@@ -226,5 +252,8 @@ button{
     }
     .aclaracionForm{
         font-size: 165%;
+    }
+    form p{
+        font-size: 100%;
     }
 }

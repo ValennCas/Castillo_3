@@ -30,6 +30,12 @@ function asignarEvento(){
             input[i].classList.remove("estiloInput");
             let p=input[i].previousElementSibling; //Se toma al anterior hermano(p).
             p.innerHTML="";
+            if(input[i]===document.getElementById("telefono")){//Se fija si el elemento que cambio fue el telefono para sacarle el estilo a email ya que no se requiere que lo llene
+                sacarEstilo(document.getElementById("email"));
+            }
+            if(input[i]===document.getElementById("email")){//Se fija si el elemento que cambio fue el email para sacarle el estilo a telefono ya que no se requiere que lo llene
+                sacarEstilo(document.getElementById("telefono"));
+            }
         }
        })
     }
@@ -41,9 +47,12 @@ function asignarEvento(){
             p.innerHTML="";
         }
     })
-
 }
-
+function sacarEstilo(elemento){
+    elemento.classList.remove("estiloInput");
+    let p=elemento.previousElementSibling; //Se toma al anterior hermano(p).
+    p.innerHTML="";
+}
 //Limpia el valor de los campos
 function borrarCampos(){
     document.getElementById("telefono").value="";
