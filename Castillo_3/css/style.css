@@ -202,10 +202,7 @@ button{
 }
 
 @media only screen and (min-width: 820px) {
-    label, .texto-Contacto{
-        font-size: 165%;
-    }
-    button{
+    label, .texto-Contacto, button{
         font-size: 165%;
     }
     h1{
